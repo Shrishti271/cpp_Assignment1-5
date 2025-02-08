@@ -1,25 +1,56 @@
-#include<iostream>
+/*#include <iostream>
 using namespace std;
 int main(){
-    int n,i,k=0;
-    cout<<"Enter a positive integer: ";
-    cin>>n;
-    int m[n];
-    if(n>0){
-        for(i=1;i<=n;i++){
-            if(n%i==0){
-                m[k]=i;
-                k++;
-            }
-        }
-            if(k==2)
-            cout<<"It is a prime number.";
-            else{
-                cout<<"Not a prime number. Factors are: ";
-                for(i=0;i<k;i++)
-                cout<<m[i]<<" ";
-            }
+int num;
+  cout<<"kindly enter the num:- ";
+  cin>>num;
+  for (int i=2;i<num;i++){
+     if (num%i==0){
+      cout<<"it is not a  prime num"<<endl;
+      return 0;
+  }
+ }
+cout<< "it is a prime num";       
+
+  return 0;
+}*/
+
+
+/*#include <iostream>
+using namespace std;
+int main(){
+  int n;
+  cout<<"kindly enter the num"<<endl;
+  cin>>n;
+  cout << "The factors of " << n << " are: ";
+  int count=0;
+  for (int i=1;i<n;i++){
+    if (n%i==0){
+      cout << i << " "; 
+    count++; 
     }
-    else
-    cout<<"Invalid Number.";
+  }
+  cout << endl;
+  return 0;
+}*/
+#include <iostream>
+using namespace std;
+int main(){
+  int n;
+  cout<<"kindlly enter the num "<<endl;
+  cin>>n;
+  if
+   int nextPrime = n + 1;
+    while (true) {
+        int i;
+        for (i = 2; i * i <= nextPrime; i++) {
+            if (nextPrime % i == 0) break; 
+        }
+        if (i * i > nextPrime) break; 
+        nextPrime++;
+    }
+
+    cout << "Next higher prime: " << nextPrime << endl;
+    return 0;
+  
 }
