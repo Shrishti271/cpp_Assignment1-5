@@ -6,12 +6,12 @@ int main(){
     char c,c1;
     int i,j,l,k=1;
 
-    //a.
+    //A
     cout<<"Enter a String: ";
     getline(cin,st);
     
 
-    //b.
+    //B
     l=st.length();
     for(i=0;i<l;i++){
         c=st.at(i);
@@ -31,7 +31,7 @@ int main(){
     cout<<"Not Palindrome"<<endl;
 
 
-    //c.
+    //C
     cout<<"Frequencies of each chracter: "<<endl;
     l=st.length();
     for(i=0;i<l;i++)
@@ -51,4 +51,6 @@ int main(){
         k=1;
     }
     }
+   return 0;
+
 }
