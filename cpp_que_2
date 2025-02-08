@@ -1,10 +1,11 @@
 #include<iostream>
 using namespace std;
 int main(){
+
     int n,i,j,tmp=0,ss,sl;
 
 
-    //a.
+    //A
     cout<<"Enter the size of array: ";
     cin>>n;
 
@@ -18,7 +19,7 @@ int main(){
     cout<<m[i]<<" ";
 
 
-    //b.
+    //B
     for(i=0,j=n-1;i<j;i++,j--){
         tmp=m[i];
         m[i]=m[j];
@@ -30,7 +31,7 @@ int main(){
     cout<<m[i]<<" ";
 
 
-    //c.
+    //C
     for(i=0;i<n-1;i++){
         for(j=i+1;j<n;j++){
             if(m[i]>m[j]){
@@ -40,8 +41,10 @@ int main(){
             }
         }
     }
+
     ss = m[1];
     sl = m[n-2];
     cout<<endl<<"Second Smallest: "<<ss;
     cout<<endl<<"Second Largest: "<<sl;
+return 0;
 }
